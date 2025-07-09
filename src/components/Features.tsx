@@ -1,37 +1,50 @@
 import featureIcons from "@/assets/feature-icons.png";
 import TinyCard from "./TinyCard";
+import link from "@/assets/link.png";
+import bag from "@/assets/bag.png";
+import truck from "@/assets/truck.png";
+import settings from "@/assets/settings.png";
+import graph from "@/assets/graph.png";
+import box from "@/assets/box.png";
 
 const Features = () => {
   const features = [
     {
-      title: "Real-time Tracking",
+      image: link,
+      title: "Your own shareable storefront URL",
       description:
-        "Monitor inventory levels across all locations with live updates and automated alerts.",
+        "Give your hustle a home. Instantly get a branded link you can drop in bios, chats, and DMs — no tech setup required.",
     },
     {
-      title: "AI-Powered Analytics",
+      image: bag,
+      title: "Add & manage unlimited products",
       description:
-        "Leverage machine learning to predict demand patterns and optimize stock levels.",
+        "Upload once, edit anytime. Showcase all your products without limits — whether you're selling one item or a hundred.",
     },
     {
-      title: "Smart Automation",
+      image: box,
+      title: "Live inventory tracking",
       description:
-        "Automate reordering, alerts, and workflows to reduce manual tasks and errors.",
+        "Know what’s in stock, what’s running low, and what’s selling fast — no more manual counting or “oops, we’re out.”",
     },
     {
-      title: "Mobile Access",
+      image: graph,
+      title: "Simple finance and sales dashboard",
       description:
-        "Manage inventory on-the-go with our mobile app and barcode scanning features.",
+        "Get the insights you need to grow. View your revenue, order trends, and product performance at a glance.",
     },
     {
-      title: "Team Collaboration",
+      image: truck,
+      title: "Choose your delivery company",
       description:
-        "Enable seamless communication between warehouse staff, managers, and suppliers.",
+        "Pick from trusted logistics partners or add your own.Fulfill orders without the back-and-forth.",
     },
     {
-      title: "Enterprise Security",
+      image: settings,
+      title:
+        "Designed for mobile-first — because that’s where your customers live",
       description:
-        "Bank-grade security with role-based access controls and audit trails.",
+        "Built for the way you work — on the go. Your dashboard and store look perfect on any phone, anytime.",
     },
   ];
 
@@ -55,8 +68,11 @@ const Features = () => {
             >
               <div className="flex flex-col items-center text-center space-y-4">
                 {/* Icon placeholder - In a real implementation, you'd use individual icons */}
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <div className="w-8 h-8 bg-primary/20 rounded"></div>
+                <div className="w-16 h-16 flex items-center justify-center">
+                  <img
+                    src={feature.image}
+                    alt={`${feature.title}-icon image`}
+                  />
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-lg font-semibold">{feature.title}</h3>
