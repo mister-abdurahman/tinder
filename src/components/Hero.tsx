@@ -43,7 +43,7 @@ const Hero = () => {
                 placeholder="Enter your email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1"
+                className="flex-1 rounded-full border-gray-300"
                 required
               />
               <Button

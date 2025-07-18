@@ -13,32 +13,35 @@ const FinalCTA = () => {
   };
 
   return (
-    <section className="py-20 bg-primary text-primary-foreground">
+    <section className="sm:py-20 py-12 bg-[#EEF2FF] text-black">
       <div className="container px-4">
         <div className="text-center space-y-8 max-w-3xl mx-auto">
           <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
-            Start optimizing your inventory today
+            No more back-and-forth. Just your store, your rules.
           </h2>
-          <p className="text-lg text-primary-foreground/80 leading-relaxed">
-            Join thousands of businesses who have already transformed their operations. 
-            No setup fees, no long-term contracts, just results.
+          <p className="text-lg text-gray-600 leading-relaxed">
+            JJoin the waitlist today and be the first to launch your store,
+            manage inventory, and track sales — all in one place
           </p>
-          
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+          >
             <Input
               type="email"
               placeholder="Enter your work email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 bg-white text-foreground placeholder:text-muted-foreground"
+              className="flex-1 bg-white text-foreground placeholder:text-muted-foreground rounded-full border-gray-400"
               required
             />
-            <Button 
-              type="submit" 
+            <Button
+              type="submit"
               variant="secondary"
-              className="bg-white text-primary hover:bg-white/90 whitespace-nowrap"
+              className="bg-primary text-white hover:bg-primary/90 whitespace-nowrap rounded-full"
             >
-              Get Started Free
+              Join the Waitlist
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </form>

@@ -2,8 +2,8 @@ const Footer = () => {
   const navItems = [
     { label: "Features", href: "#features" },
     { label: "Solutions", href: "#solutions" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Resources", href: "#resources" },
+    { label: "Insights", href: "#insights" },
+    // { label: "Pricing", href: "#pricing" },
   ];
 
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-md bg-primary"></div>
-            <span className="text-xl font-bold">InvenFlow</span>
+            <span className="text-xl font-bold">Tinder</span>
           </div>
 
           {/* Navigation */}
@@ -31,7 +31,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-sm text-muted-foreground">
-            © 2024 InvenFlow. All rights reserved.
+            © {new Date().getFullYear()} Tinder. All rights reserved.
           </div>
         </div>
       </div>

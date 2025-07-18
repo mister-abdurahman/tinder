@@ -49,7 +49,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="sm:py-20 py-12 bg-muted/30">
       <div className="container px-4">
         <div className="text-center space-y-4 mb-16">
           <div className="flex justify-center">

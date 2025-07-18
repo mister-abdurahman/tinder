@@ -1,30 +1,30 @@
 import { Check } from "lucide-react";
-import mobileImage from "@/assets/mobile-features.jpg";
+import mobileImage from "@/assets/join_early_card.png";
+import TinyCard from "./TinyCard";
 
 const MobileFeatures = () => {
   const mobileFeatures = [
-    "Scan barcodes and QR codes instantly",
-    "Update inventory levels on-the-go",
-    "Receive real-time alerts and notifications",
-    "Access reports and analytics anywhere",
-    "Offline mode for uninterrupted work"
+    "Early access before public launch",
+    "Lifetime discount — you’ll never pay full price",
+    "Your feedback → our product roadmap",
+    "We’ll feature your store on launch",
   ];
 
   return (
-    <section className="py-20">
+    <section className="sm:py-20 py-12 bg-[#F8FAFC]">
       <div className="container px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="space-y-6">
             <div className="space-y-4">
-              <p className="text-sm font-medium text-primary">
-                MOBILE FIRST APPROACH
-              </p>
+              <TinyCard text="Launching Soon" />
               <h2 className="text-3xl lg:text-4xl font-bold">
-                Manage inventory from anywhere
+                Why Join Early?
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Our mobile app gives your team the power to update inventory, scan items, and access critical data whether they're in the warehouse, on the shop floor, or in the field.
+                Tincidunt arcu non sodales neque sodales ut etiam sit. Aliquet
+                sagittis id consectetur purus ut faucibus. Aliquam id diam
+                maecenas ultricies mi eget mauris pharetra et.
               </p>
             </div>
 
@@ -42,14 +42,13 @@ const MobileFeatures = () => {
 
           {/* Right Column - Image */}
           <div className="relative">
-            <div className="overflow-hidden rounded-xl shadow-lg">
+            <div className="overflow-hidden">
               <img
                 src={mobileImage}
                 alt="Mobile inventory management app"
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/10 rounded-full blur-2xl"></div>
           </div>
         </div>
       </div>

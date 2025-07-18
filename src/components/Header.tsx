@@ -14,7 +14,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 border-b bg-background/80 bg-gradient-to-r from-background/80 from-85% to-[#E4D7FF]/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between sm:px-12 px-4 py-2">
         {/* Logo and Navigation */}
         <div className="flex items-center space-x-12">
@@ -38,7 +38,6 @@ const Header = () => {
 
         {/* CTA Section with Gradient */}
         <div className="hidden md:flex items-center space-x-4 relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-primary/10 rounded-lg -m-2"></div>
           <div className="relative flex items-center space-x-4">
             <Button
               variant="ghost"
